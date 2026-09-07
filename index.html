@@ -14,11 +14,12 @@
           <span class="brand-mark">{ }</span>
           <span>Json<span>Lens</span></span>
         </a>
-        <div class="privacy-pill"><span class="pulse"></span> Verileriniz cihazınızda kalır</div>
+        <div class="privacy-pill"><span class="pulse"></span> <span data-i18n="privacy">Verileriniz cihazınızda kalır</span></div>
         <div class="top-actions">
-          <button class="ghost-btn" id="loadSampleBtn">Örnek yükle</button>
+          <label class="language-picker" aria-label="Language"><span>文</span><select id="languageSelect"><option value="tr">TR</option><option value="en">EN</option></select></label>
+          <button class="ghost-btn" id="loadSampleBtn" data-i18n="sample">Örnek yükle</button>
           <label class="button button-primary file-btn">
-            <span>JSON içe aktar</span>
+            <span data-i18n="import">JSON içe aktar</span>
             <input id="fileInput" type="file" accept=".json,application/json" hidden />
           </label>
         </div>
@@ -28,8 +29,8 @@
         <section class="hero">
           <div>
             <p class="eyebrow">LOCAL JSON WORKSPACE</p>
-            <h1>JSON'u <em>görünür</em> hale getir.</h1>
-            <p class="hero-copy">Verinizi tabloya dönüştürün, yapısını keşfedin ve dışa aktarın. Hiçbir veri sunucuya gitmez.</p>
+            <h1 data-i18n="heroTitle">JSON'u <em>görünür</em> hale getir.</h1>
+            <p class="hero-copy" data-i18n="heroCopy">Verinizi tabloya dönüştürün, yapısını keşfedin ve dışa aktarın. Hiçbir veri sunucuya gitmez.</p>
           </div>
           <div class="hero-note"><span>01</span><strong>Yapıştır</strong><small>JSON verinizi buraya bırakın</small></div>
           <div class="hero-note"><span>02</span><strong>Keşfet</strong><small>Tree veya tablo görünümünü seçin</small></div>
@@ -39,12 +40,12 @@
         <section class="workspace-card">
           <div class="input-panel">
             <div class="panel-heading">
-              <div><span class="step-label">01 / INPUT</span><h2>JSON verisi</h2></div>
+              <div><span class="step-label">01 / INPUT</span><h2 data-i18n="jsonData">JSON verisi</h2></div>
               <button class="icon-btn" id="clearBtn" title="Temizle" aria-label="JSON'u temizle">×</button>
             </div>
             <div class="editor-wrap">
               <div class="line-numbers" id="lineNumbers">1</div>
-              <textarea id="jsonInput" spellcheck="false" aria-label="JSON verisi" placeholder="JSON verinizi buraya yapıştırın...">{
+              <textarea id="jsonInput" spellcheck="false" aria-label="JSON verisi" data-i18n-placeholder="inputPlaceholder" placeholder="JSON verinizi buraya yapıştırın...">{
   "project": "JsonLens",
   "version": 1,
   "features": [
@@ -54,27 +55,27 @@
   "owner": { "name": "Ada Lovelace", "role": "Builder" }
 }</textarea>
             </div>
-            <div class="input-footer"><span id="charCount">0 karakter</span><span class="shortcut">⌘ + V ile yapıştır</span></div>
+            <div class="input-footer"><span id="charCount">0 karakter</span><span class="shortcut" data-i18n="pasteHint">⌘ + V ile yapıştır</span></div>
           </div>
 
           <div class="divider"></div>
 
           <div class="output-panel">
             <div class="panel-heading output-heading">
-              <div><span class="step-label">02 / EXPLORE</span><h2>Görünüm</h2></div>
+              <div><span class="step-label">02 / EXPLORE</span><h2 data-i18n="view">Görünüm</h2></div>
               <div class="view-tabs" role="tablist">
-                <button class="view-tab active" data-view="table" role="tab">▦ Tablo</button>
+                <button class="view-tab active" data-view="table" role="tab" data-i18n="table">▦ Tablo</button>
                 <button class="view-tab" data-view="tree" role="tab">⌘ Tree</button>
               </div>
             </div>
             <div class="toolbar">
-              <label class="key-box"><span>Liste anahtarı</span><input id="listKey" type="text" placeholder="örn. data" /></label>
-              <div class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Sonuçlarda ara..." /><kbd>⌘ K</kbd></div>
+              <label class="key-box"><span data-i18n="listKey">Liste anahtarı</span><input id="listKey" type="text" data-i18n-placeholder="keyPlaceholder" placeholder="örn. data" /></label>
+              <div class="search-box"><span>⌕</span><input id="searchInput" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Sonuçlarda ara..." /><kbd>⌘ K</kbd></div>
               <div class="toolbar-actions">
-                <button class="toolbar-btn" id="expandBtn">＋ Aç</button>
-                <button class="toolbar-btn" id="collapseBtn">− Kapat</button>
-                <button class="toolbar-btn" id="copyBtn">⧉ Kopyala</button>
-                <button class="export-btn" id="exportBtn">↧ CSV indir</button>
+                <button class="toolbar-btn" id="expandBtn" data-i18n="expand">＋ Aç</button>
+                <button class="toolbar-btn" id="collapseBtn" data-i18n="collapse">− Kapat</button>
+                <button class="toolbar-btn" id="copyBtn" data-i18n="copy">⧉ Kopyala</button>
+                <button class="export-btn" id="exportBtn" data-i18n="downloadCsv">↧ CSV indir</button>
               </div>
             </div>
             <div id="statusBar" class="status-bar"><span class="status-dot"></span><span id="statusText">JSON bekleniyor</span><span class="status-spacer"></span><span id="rowCount"></span></div>

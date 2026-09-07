@@ -20,6 +20,7 @@ body { background:#fff; color:#202124; font-family:Arial, sans-serif; }
 .topbar { height:54px; border-bottom:1px solid #c9cdd1; padding:0 16px; }
 .brand { font-size:16px; }.brand-mark { border-radius:3px; height:24px; width:28px; }.privacy-pill,.hero,.bottom-strip { display:none; }
 .top-actions { margin-left:auto; gap:8px; }.ghost-btn { color:#3c4043; padding:7px 10px; }.button { border-radius:3px; padding:8px 12px; }.button-primary { background:#217346; }
+.language-picker { align-items:center; border:1px solid #c9cdd1; border-radius:3px; color:#5f6368; display:flex; font-size:12px; gap:4px; height:28px; padding:0 5px; }.language-picker select { appearance:none; background:transparent; border:0; color:#3c4043; cursor:pointer; font-size:11px; font-weight:700; outline:0; padding:0 2px; }
 .workspace-card { border:0; border-radius:0; box-shadow:none; display:grid; grid-template-columns:310px 1px minmax(0,1fr); min-height:calc(100vh - 54px); }
 .input-panel,.output-panel { padding:14px; }.divider { background:#d9dde1; }.panel-heading h2 { font-size:14px; margin:6px 0 0; }.step-label { color:#6b7278; font-family:Arial,sans-serif; letter-spacing:.5px; }.icon-btn { font-size:20px; }
 .editor-wrap { border-radius:2px; height:calc(100vh - 170px); margin-top:14px; }.editor-wrap textarea { color:#202124; font-family:Consolas,'Courier New',monospace; font-size:12px; }.line-numbers { font-family:Consolas,'Courier New',monospace; }
