@@ -31,3 +31,20 @@ body { background:#fff; color:#202124; font-family:Arial, sans-serif; }
 .inline-list { display:block; max-width:320px; }.inline-list summary { color:#1769aa; cursor:pointer; list-style-position:inside; }.inline-list[open] { background:#f8fbff; border:1px solid #d4e3f4; padding:3px 5px; }.list-items { border-left:2px solid #d4e3f4; margin:4px 0 2px 5px; padding-left:7px; }.list-items > div { border-bottom:1px solid #edf0f2; line-height:1.7; overflow-wrap:anywhere; }.list-items > div:last-child { border-bottom:0; }.list-index { color:#89939c; display:inline-block; margin-right:6px; min-width:16px; }.list-key { color:#7b3f98; margin-right:6px; }.cell-object { color:#1769aa; }
 .tree { font-size:12px; }.tree-node { border-bottom:1px solid #edf0f2; padding:6px 3px; }.tree-toggle { color:#217346; }.tree-key { color:#7b3f98; }.tree-type { color:#777; }.tree-value { color:#1769aa; }
 @media (max-width:900px) { .workspace-card { display:block; min-height:0; }.divider { height:1px; width:auto; }.editor-wrap { height:280px; } }
+.json-table th { cursor:pointer; }
+.json-table th:hover { background:#dcebdc; color:#176b3a; }
+.json-table th::after { color:#9aa0a6; content:'  ⓘ'; font-size:10px; }
+.stats-panel { background:#fff; border:1px solid #c9cdd1; margin:0 0 10px; max-width:520px; padding:12px; }
+.stats-heading { align-items:center; display:flex; justify-content:space-between; }
+.stats-heading strong { display:block; font-size:14px; margin-top:4px; }
+.stats-label { color:#6b7278; display:block; font-size:10px; font-weight:700; letter-spacing:.5px; }
+.stats-close { background:none; border:0; color:#6b7278; font-size:18px; }
+.stats-summary { border-bottom:1px solid #e1e4e7; display:flex; gap:22px; margin-top:12px; padding-bottom:10px; }
+.stats-summary span { color:#6b7278; font-size:11px; }
+.stats-summary b { color:#202124; font-size:15px; margin-right:3px; }
+.stats-list { margin-top:7px; }
+.stats-row { align-items:center; display:grid; gap:7px; grid-template-columns:20px minmax(100px,1fr) 35px 100px; min-height:26px; }
+.stats-rank { color:#9aa0a6; font-size:10px; text-align:right; }
+.stats-value { overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.stats-count { color:#202124; font-size:11px; font-weight:700; text-align:right; }
+.stats-bar { background:linear-gradient(to right,#a9d5b3 var(--bar),#eef3ef var(--bar)); height:8px; }
