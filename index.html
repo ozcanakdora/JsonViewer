@@ -72,6 +72,7 @@
               <label class="key-box"><span data-i18n="listKey">Liste anahtarı</span><input id="listKey" type="text" data-i18n-placeholder="keyPlaceholder" placeholder="örn. data" /></label>
               <div class="search-box"><span>⌕</span><input id="searchInput" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="Sonuçlarda ara..." /><kbd>⌘ K</kbd></div>
               <div class="toolbar-actions">
+                <button class="toolbar-btn columns-btn" id="columnsBtn" aria-expanded="false" data-i18n="columns">▤ Kolonlar</button>
                 <button class="toolbar-btn" id="expandBtn" data-i18n="expand">＋ Aç</button>
                 <button class="toolbar-btn" id="collapseBtn" data-i18n="collapse">− Kapat</button>
                 <button class="toolbar-btn" id="copyBtn" data-i18n="copy">⧉ Kopyala</button>
@@ -79,6 +80,7 @@
               </div>
             </div>
             <div id="statusBar" class="status-bar"><span class="status-dot"></span><span id="statusText">JSON bekleniyor</span><span class="status-spacer"></span><span id="rowCount"></span></div>
+            <div id="columnsPanel" class="columns-panel" hidden></div>
             <section id="statsPanel" class="stats-panel" hidden></section>
             <div id="output" class="output-area"></div>
           </div>
